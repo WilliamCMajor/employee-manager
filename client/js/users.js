@@ -1,4 +1,4 @@
-import ejs from "ejs";
+
 
 let apiBaseUrl = 'http://localhost:5000/';
 let apiKey = 'api/v1/users';
@@ -16,13 +16,14 @@ const data = userModel(url).then(result=>{
         console.log(item);
         const template = `
         <ul>
-            <li><%- item.username %></li>
-            <li><%- item.email %></li>
-            <li><%- item.password %></li>
-            <li><%- item.id %></li>
+            <li>${item.username}</li>
+            <li>${item.email}</li>
+            <li>${item.password}</li>
+            <li>${item.id}</li>
         </ul>
         `
-        let renderData = ejs.render(template, {item:item})
+
+        document.createRange().createContextualFragment()
 
         document.querySelector('#userData').insertAdjacentElement("afterbegin", renderData)
 
