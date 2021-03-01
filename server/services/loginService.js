@@ -13,6 +13,7 @@ exports.authenticate = (credential)=>{
  
    const {email, password} = {...credential}
    const users = fileService.getFileContents('../data/users.json');
+   console.log(users);
    // flush the authentication
    
  const authUser =  users.reduce((authObj, user)=>{

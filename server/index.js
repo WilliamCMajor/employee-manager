@@ -10,6 +10,9 @@ const cookSession = require('cookie-session')
 
 // Importing our Login Service Used With the POST Login Route
 const loginService = require('./services/loginService')
+// Import sign up service with the post route
+const signUpService = require('./services/signUpService')
+const fileService = require('./services/fileService')
 
 
 
@@ -115,7 +118,41 @@ app.use(express.static(path.join(__dirname, "../client"), {extensions: ["html", 
  
  })
 
- 
+
+// Register Routing Middleware
+app.get('/signup', (req,res)=>{
+  res.render('signup', {validateMessage:""});
+})
+
+app.post('/signup', (req, res)=>{
+  // POST name value pairs in body request
+  const credentials = {
+    username:req.body.fullname,
+    email:req.body.email,
+    password:req.body.password
+  }
+
+  const returnValue = signUpService.validateData(credentials);
+  
+  if(returnValue.message === "Register Success!"){
+    //alert("Register Success!")
+    res.redirect('/login')
+
+
+  }else{
+    res.render('signup', {validateMessage:returnValue.message});
+
+  }
+  
+})
+
+
+// Users Routing Middleware
+app.get('/api/v1/users', (req, res)=>{
+  res.send(fileService.getFileContents('../data/users.json'))
+})
+
+
 
 // Final Middleware 
 // Catch all for any request not handled while express was

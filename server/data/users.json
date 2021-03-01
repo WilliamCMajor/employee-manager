@@ -1,1 +1,10 @@
-[{"username":"jim","email":"user@gmail.com","password":"1234"}]
+[
+  { "username": "jim", "email": "user@gmail.com", "password": "1234" },
+  { "username": "Wiliiam", "email": "test@gmail.com", "password": "12354567" },
+  {
+    "username": "cmajor",
+    "email": "email@workspace.com",
+    "password": "123456",
+    "id": "13bd522b-498f-4488-a0b1-452aef7cad7f"
+  }
+]

@@ -3,8 +3,13 @@
     box-shadow: 0 0 3px 0 grey;;
     ul{
         display:flex;
-        justify-content: space-between;
+        justify-content: flex-start;
     }
+    
+    li{
+        margin-right: 10px;
+    }
+
     a{
         color:rgb(82, 99, 114);
         text-decoration: none;
