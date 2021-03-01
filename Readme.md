@@ -59,8 +59,8 @@ app.set('views', path.join(__dirname, './views'));
 - create user.json file to save platform users
 - create a fileService to read and write files.
 - create a login post route to handle the form.
-- how to get form data from the body.
-- how to send form data from client.
+- Get form data from the body.
+- Send form data from client.
 
 
 Resourses
