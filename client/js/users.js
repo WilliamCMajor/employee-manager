@@ -1,6 +1,6 @@
 
 
-let apiBaseUrl = 'http://localhost:5000/';
+let apiBaseUrl = 'https://employee-manager-sq.herokuapp.com/';
 let apiKey = 'api/v1/users';
 let url = apiBaseUrl+apiKey
 
