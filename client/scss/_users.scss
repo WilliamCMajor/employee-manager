@@ -1,0 +1,20 @@
+h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+section {
+    padding: 10% 20%;
+}
+
+#userData {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#userData ul{
+    margin-bottom: 24px;
+}

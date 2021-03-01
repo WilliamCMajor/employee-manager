@@ -1,10 +1,20 @@
 [
-  { "username": "jim", "email": "user@gmail.com", "password": "1234" },
-  { "username": "Wiliiam", "email": "test@gmail.com", "password": "12354567" },
   {
     "username": "cmajor",
     "email": "email@workspace.com",
     "password": "123456",
     "id": "13bd522b-498f-4488-a0b1-452aef7cad7f"
+  },
+  {
+    "username": "William ",
+    "email": "she8@nait.ca",
+    "password": "123456789",
+    "id": "de52db9b-c354-4a95-be7e-be894a5e6bb8"
+  },
+  {
+    "username": "jim foley",
+    "email": "email@workspace.com",
+    "password": "temp123456",
+    "id": "37684879-e25d-425a-a7f7-4d057c953f6f"
   }
 ]

@@ -16,16 +16,17 @@ const data = userModel(url).then(result=>{
         console.log(item);
         const template = `
         <ul>
-            <li>${item.username}</li>
-            <li>${item.email}</li>
-            <li>${item.password}</li>
-            <li>${item.id}</li>
+            <li>User Name: ${item.username}</li>
+            <li>Email: ${item.email}</li>
+            <li>Password: ${item.password}</li>
+            <li>User ID: ${item.id}</li>
         </ul>
         `
 
-        document.createRange().createContextualFragment()
+        const element = document.createRange().createContextualFragment(template).children[0];
+        console.log(element);
 
-        document.querySelector('#userData').insertAdjacentElement("afterbegin", renderData)
+        document.querySelector('#userData').insertAdjacentElement("afterbegin", element)
 
     })
 
